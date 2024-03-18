@@ -28,7 +28,7 @@ RUN apt-get update \
 COPY deploy/odbc.ini /etc/odbc.ini
 
 # Copia o arquivo de bloqueio do renv e restaura o ambiente
-COPY renv.lock.prod renv.lock
+COPY deploy/renv.lock.prod renv.lock
 RUN R -e 'renv::restore()'
 
 # Copia o pacote da aplicação e instala
