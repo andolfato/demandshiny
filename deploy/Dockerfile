@@ -1,4 +1,4 @@
-FROM demandshiny_base
+FROM andersonadolfato970/shiny1:demandshiny
 
 # Instalação dos pacotes necessários
 RUN apt-get update && apt-get install -y \
