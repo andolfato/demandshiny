@@ -1,0 +1,4 @@
+docker build -f Dockerfile_base --progress=plain -t demandshiny_base .
+docker build -f Dockerfile --progress=plain -t demandshiny:latest .
+docker run -p 80:80 demandshiny:latest
+# then go to 127.0.0.1:80
