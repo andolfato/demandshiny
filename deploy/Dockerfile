@@ -25,7 +25,7 @@ RUN apt-get update \
  && apt-get clean
 
 # Copia o arquivo de configuração do ODBC
-COPY odbc.ini /etc/odbc.ini
+COPY deploy/odbc.ini /etc/odbc.ini
 
 # Copia o arquivo de bloqueio do renv e restaura o ambiente
 COPY renv.lock.prod renv.lock
